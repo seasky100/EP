@@ -1,0 +1,577 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   DIY By Huhao
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+    background-color: transparent;
+    text-decoration:none;
+	outline: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	display: block;
+}
+
+/*清除浮动*/
+.clearfix:after{content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.clearfix{zoom:1;}
+
+
+/************************导航栏开始***************************************/
+#nav{
+	padding-top: 20px;
+	width: 100%;
+	background: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+	/*position: fixed;
+    top: 52px;   
+    left: 0;
+    z-index: 100;*/
+}
+#nav .wrap{
+	box-sizing:border-box;
+}
+.logoOld{
+	width: 140px;
+	height: 60px;
+	padding-left: 63px;
+	float: left;
+}
+
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+
+.menuDiv { 
+    float: right;    	
+}
+
+.redline{
+	width: 34px;
+	height: 2px;
+	background: #D7000F;
+	margin: 0 auto 18px;
+	display: none;
+}
+
+/* 设置ul和li的样式 */
+.menuDiv ul li{	
+	position: relative;
+	float: left;
+}
+
+/* 一级菜单 */
+.menuDiv > ul > li > a {
+	padding:18px 19px;
+    color: black;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+
+/* 二级菜单*/
+.menuDiv > ul > li > ul {
+    display: none;
+    border: 1px solid #ccc;
+	background: #FFFFFF;
+	position: absolute;
+	left: 0;
+	top: 74px;
+	z-index: 100;
+}
+
+.menuDiv > ul > li > ul li:last-of-type  {
+	margin-bottom: 18px;
+}
+
+/* 设置二级菜单的li的样式 */
+.menuDiv > ul > li > ul > li {
+    float: none;
+    padding:0 23px;
+	opacity: 0.9;
+}
+
+.menuDiv > ul > li > ul > li > a {
+    width: 205px;
+    height: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    display: block;
+    font-size: 14px;
+}
+  
+/* 鼠标放在一级菜单上，显示二级菜单 */
+.menuDiv > ul > li:hover ul {
+    display: block;
+}
+
+.menuDiv > ul > li:hover .redline {
+    display: block;
+}
+
+/* 在一级菜单中，鼠标放上去的样式 */
+.menuDiv > ul > li > a:hover {
+    color: #d7000f;
+    font-weight:bold;
+}
+
+/* 在二级菜单中，鼠标放上去的样式 */
+.menuDiv > ul > li > ul > li:hover {
+    background-color: #D7000F;
+}
+
+.menuDiv > ul > li > ul > li:hover a{
+	border-bottom: 1px solid #D7000F;
+    /*border-bottom: 0;*/
+}
+ 
+.menuDiv > ul > li > ul > li a:hover {
+    color: #FFFFFF;
+}
+
+.menuDiv > ul > li .serviceUl li a{
+	width: 151px;
+	position: relative;
+}
+
+.serviceUl li a>i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 14px;
+	left: 0;
+}
+
+.serviceUl li:nth-of-type(1) a i{
+	background: url(../img/i1.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(2) a i{
+	background: url(../img/i2.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(3) a i{
+	background: url(../img/i3.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(4) a i{
+	background: url(../img/i4.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(1):hover a i{
+	background: url(../img/i11.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(2):hover a i{
+	background: url(../img/i22.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(3):hover a i{
+	background: url(../img/i33.png) no-repeat top center;
+}
+.serviceUl li:nth-of-type(4):hover a i{
+	background: url(../img/i44.png) no-repeat top center;
+}
+
+.menuDiv > ul > li .productUl li a{
+	position: relative;
+}
+
+.productUl li a>i{
+	display: block;
+	width: 37px;
+	height: 33px;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+
+.fixnav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-top: 0 !important;
+}
+
+.logoNew{
+	width: 95px;
+    height: 40px;
+    margin-top: 15px;
+    float: left;
+}
+
+.new{
+	margin-top: 95px;
+}
+
+/************************导航栏结束***************************************/
+
+
+/******************************产品工具栏*******************************/
+#productTool{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	width: 50px;
+	height: 300px;
+	background-color: #333333;
+	z-index: 110;
+	margin-top: -150px;
+}
+
+#productTool img{
+	margin:0 auto;	 
+	margin-top: 10px;
+}
+
+#productTool .wenzi{
+	width: 22px;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 28px; 
+	color: #ffffff;
+	margin: 0 auto;
+	margin-top: 8px;
+	text-align: center;
+}
+
+#productTool .button{
+	color: #FFFFFF;
+	width: 40px;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-bottom: 1px solid #656565; 
+	text-align: center;
+	cursor: pointer;
+}
+
+#productTool .button1{
+	margin-top: 18px;
+	border-top: 1px solid #656565; 
+}
+
+#productTool .button i{
+	color: #FFF;
+	font-size: 26px;
+}
+
+#productTool .button1:hover i{
+	color: #d7000d;
+}
+
+#productTool .button1:hover .selectProduct{
+	display: block;
+}
+
+#productTool .button2:hover i{
+	color: #d7000d;
+}
+
+#productTool .button2:hover .compareProduct{
+	display: block;
+}
+
+.selectProduct,.compareProduct{
+	display: none;
+}
+
+#productTool .selectProduct img{
+	margin: 0;
+	position: absolute;
+	top: 166px;
+    left: 42px;
+}
+
+#productTool .compareProduct img{
+	margin: 0;
+	position: absolute;
+	top: 230px;
+    left: 42px;
+}
+
+.productToolBox{
+	width: 369px;
+	height: 100%;
+	border: 1px solid #e4e4e4;
+	box-shadow: 10px 5px 5px #CCCCCC;
+	position: fixed;
+	background-color: #FFFFFF;
+	left: -380px;
+    top: 0;
+	overflow: auto;
+	display: none;
+	padding-bottom: 20px;
+}
+
+#productTool .productToolBox .toolTop{
+	width: 289px;
+	margin: 18px auto;	
+	font-size: 22px;
+}
+
+#productTool .productToolBox .toolTop span{
+	background-position:50% 50% ;
+	vertical-align: middle;
+}
+
+.productToolBox .back{
+	width: 11px;
+	height: 25px;
+	display: inline-block;
+	margin-right: 85px;
+	background: url(../img/productToolBox-Arrow.png) no-repeat;
+	background-position-y: 7px;
+}
+ 
+.productToolBox .quit{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-left: 72px;
+	background: url(../img/quit.png) no-repeat;	
+	cursor: pointer;
+}
+
+.selectBox{
+	width: 289px;
+	margin: 0 auto;
+	border-top:1px solid #b2b2b2;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.selectBox p{
+	font-size: 12px;
+	line-height: 12px;
+	color: #ababab;
+	width: 258px;
+	display: none;
+}
+
+.subNav{
+	cursor:pointer;
+	font-size:18px;
+	line-height:26px;
+	background:url(../img/jiantou1.jpg) no-repeat;
+	background-position:95% 50%;
+	border-top:solid 1px #e5e3da;
+	padding: 10px 0;
+}
+ 
+.currentDt{
+	background-image:url(../img/jiantou.jpg);
+}
+
+.navContent{
+	display: none;
+	padding-left: 12px;
+	padding-bottom: 20px;
+}
+
+.navContent li{
+	display:block;
+	height:24px;
+	font-size:14px;
+	line-height:24px;
+	color:#333;
+}
+
+.progress{
+	width: 289px;
+	margin: 0 auto;
+	padding: 0 20px 20px;
+	border: 2px solid black;
+}
+ 
+.progress h2{
+	font-size: 18px;
+	line-height: 38px;
+	margin-top: 10px;
+}
+
+output {
+    display: inline-blockblock;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rangeslider{
+	margin: 12px 0;
+}
+
+.progress .max{
+	margin-left: 228px;
+}
+
+.progressReset{
+	border:0px;
+	color: #FFFFFF;
+	outline: none;
+	width: 80px;
+	height: 29px;
+	background-color: #5d5d5d;
+	border-radius: 5px;
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+.toolBottom{
+	width: 289px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.toolBottom p{
+	margin-top: 10px;
+}
+
+.toolBottom .reset{
+	border:0px;
+	color: #FFFFFF;
+	outline: none;
+	width: 67px;
+	height: 29px;
+	background-color: #5d5d5d;
+	border-radius: 5px;
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+.toolBottom .sure{
+	border:0px;
+	color: #FFFFFF;
+	outline: none;
+	width: 67px;
+	height: 29px;
+	background-color: #D7000F;
+	border-radius: 5px;
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+
+/******车型对比框******/
+.selectDiv{
+	padding: 0 35px;
+}
+
+.selectText{
+	padding: 0 40px;
+}
+
+#productTool .selectTextinside{
+	margin: 10px 0;
+	padding: 10px;
+	border-bottom: 1px solid #000000;
+}
+
+.selectDiv select{
+	width: 300px;
+	height: 34px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	border: solid 1px #cdcdcd;
+}
+
+.selectDiv select:nth-of-type(2){
+ 	margin-top:6px;
+ 	display: none;
+}
+
+.selectTextinside{
+	display: flex;
+	 align-items: center;
+}
+
+.selectTextinside p{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #000000;
+	text-align: left;
+	width: 85%;
+}
+
+.selectDiv p{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 40px;
+	color: #D7000F;
+}
+
+.selectTextinside .del{
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url(../img/quit.png) no-repeat;	
+	background-size:cover;  
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.selectbox_buttons{
+	display: flex;
+	justify-content: space-between;align-items: flex-end;
+}
+
+.toCompare{
+	width: 166px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #d7000f;
+	border-radius: 5px;
+	text-align: center; 
+	font-size: 18px;	
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.empty{
+	cursor: pointer;
+}
