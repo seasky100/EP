@@ -1,8 +1,15 @@
 $(function(){
 $(".xia").click(function(){
-  // alert(000)
-  $(".carryBox").css({"height":"1000px","border-bottom":"none"});
+  console.log(111)
+  $(".two").slideToggle("slow");
 
 })
+
+$(".xia2").click(function(){
+  console.log(222)
+  $(".two2").slideToggle("slow");
+
+})
+
   
 })
