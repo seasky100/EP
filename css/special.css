@@ -189,7 +189,7 @@ position: relative;
 }
 
 .carryBoxCenLiA{
-	color: #000000;
+	color: #000000!important;
 	
 }
 
@@ -292,6 +292,7 @@ margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: #000000;
 }
 
 .thirdBoxCenOne > h3{
@@ -317,10 +318,18 @@ display: flex;
 justify-content: center;
 margin-top: 50px;
 font-size: 30px;
+position: relative;
 }
 
 .thirdBoxBottom h3{
 	margin-right: 5px;
+	color: #000000;
+}
+
+.thirdBoxBottom img{
+	position: absolute;
+	top: 0;
+	left: 66%;
 }
 
 /*************************** advantage *******************************/
