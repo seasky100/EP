@@ -279,7 +279,6 @@
   height: 100%;
 }
 
-
 .anniu .active{
   background: red;
 }
@@ -330,20 +329,25 @@
   margin-top: 40px;
 }
 
-#KeyShotVR,.rotateCen-zhong{
-  margin: 0 auto;
-  width: 1000px;
-  height: 780px!important;
+#KeyShotVR{
+  margin: 0 auto; 
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  width: 1200px;
+  height: 720px !important;
+}
+
+.rotateCen-zhong{
+  margin: 0 auto; 
   overflow: hidden;
   border: 1px solid #e0e0e0;
 }
 
 .rotateCen-btn{
-width: 100%;
-margin-top: 15px;
-margin-bottom: 100px;
-text-align: center;
-
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 .rotateCen-btn >img{
@@ -358,9 +362,109 @@ text-align: center;
   text-decoration:underline
 }
 
+/*************************表单*****************************************/
+.c1:after{
+	content:"*";
+	color:red;
+	display: inline-block;
+	width: 10px;
+} 
 
+#form .wrapper form{
+	border-top: 1px solid #cccccc;
+	padding-top: 85px;
+	padding-left:40px;
+}
 
+#form h2{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 71px 0 60px;
+}
 
+#form laber{
+	font-family: "微软雅黑";
+	font-size: 24px;	
+}
+
+#form span{
+	display: inline-block;
+	font-size: 12px;
+	margin-bottom: 54px;
+}
+
+input{
+	border: solid 1px #b4b4b4;
+	border-radius: 5px;
+	line-height: 50px;
+	width: 408px;
+	height: 50px;
+	margin-bottom: 42px;
+	font-size: 18px;
+	outline: none;
+	padding-left: 10px;
+}
+
+.name{
+	margin-right: 100px;
+}
+
+.place{
+	margin-right: 100px;
+}
+
+textarea{
+	font-size: 18px;
+	border-radius: 5px;
+	min-height: 220px;
+	width:985px;
+	vertical-align: top;
+	margin-bottom: 28px;
+	resize:vertical;
+	border: solid 1px #b4b4b4;
+	outline: none;
+	padding-left: 10px;
+	color: #000000;
+}
+
+#formSubmit{
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	line-height: 61px;
+	border-radius: 5px;
+	width: 193px;
+	height: 61px;
+	background: #d7000f;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#form .form_bot .tips{
+	color: #D7000F;
+	font-size: 18px;
+    margin: 0;
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    /*overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;*/
+}
+
+.form_bot{
+	margin-left: 58px;
+	position:relative;
+}
+
+.form_bot img{
+	position: absolute;
+	left: 751px;
+	top: 19px;
+}
 
 /************************footer栏***************************************/
 #footer{
@@ -385,9 +489,7 @@ text-align: center;
 	width: 100%;
 	height: 100%;
 }
-
-
-
+ 
 .foot_l_text span{	
 	font-weight: bold;
 	color: #FFFFFF;
@@ -517,11 +619,11 @@ text-align: center;
 
 .foot_menu_right a{
 	color: #FFFFFF;
-    text-align: center;
-    display: inline-block;
-    font:bold 16px/38px "微软雅黑";
-    margin-right: 62px;
-    margin-bottom: 68px;
+  text-align: center;
+  display: inline-block;
+  font:bold 16px/38px "微软雅黑";
+  margin-right: 62px;
+  margin-bottom: 68px;
 }
 
 .bottomUl{
