@@ -211,6 +211,7 @@
   max-width: 1920px;
   height: 600px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .lunboCen{
