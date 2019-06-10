@@ -18,7 +18,7 @@ $(function() {
             index = 0;
         }
         $(".anniu li").removeClass().eq(index).addClass("active");
-    },2000)
+    },2500)
 
     $(".anniu li").click(function(){
         var liIndex = $(this).index();
