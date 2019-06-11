@@ -25,7 +25,7 @@ $(function () {
 	var inputs = document.getElementsByTagName("input");
 	for (var i = 0; i < inputs.length; i++) {
 		if (inputs[i].getAttribute("type") == "text")
-			inputs[i].onkeyup = function () {
+			inputs[i].oninput = function () {
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
 	}

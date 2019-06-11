@@ -1,4 +1,4 @@
- var keyshotVR;
+
 $(function () {
     //轮播
     var classArr = ["lunboCenBox1", "lunboCenBox2", "lunboCenBox3", "lunboCenBox4"];
@@ -51,7 +51,7 @@ $(function () {
 	var inputs = document.getElementsByTagName("input");
 	for (var i = 0; i < inputs.length; i++) {
 		if (inputs[i].getAttribute("type") == "text")
-			inputs[i].onkeyup = function () {
+			inputs[i].oninput = function () {
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
 	}
@@ -110,7 +110,10 @@ $(function () {
             })
         }
     })
+    
+})
 
+var keyshotVR;
     function initKeyShotVR() {
         var nameOfDiv = "KeyShotVR";
         var folderName = "chanpinyi";
@@ -143,4 +146,3 @@ $(function () {
     }
 
     window.onload = initKeyShotVR;
-})
