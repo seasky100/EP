@@ -49,6 +49,15 @@ $(function () {
         }
     });
 
+    //input去空格 
+	var inputs = document.getElementsByTagName("input");
+	for (var i = 0; i < inputs.length; i++) {
+		if (inputs[i].getAttribute("type") == "text")
+			inputs[i].onkeyup = function () {
+				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
+			};
+	}
+
     //提交表单数据
     $('#formSubmit').on('click', function () {
         var name = $('.name').val();
@@ -91,7 +100,7 @@ $(function () {
                         $('.title').val("");
                         $('.content').val("");
                     } else {
-                        layer.msg("提交失败", { icon: 7, time: 1000 });
+                        layer.msg(res.message, { icon: 7, time: 1000 });
                         $('.name').val("");
                         $('.phone').val("");
                         $('.place').val("");
@@ -105,34 +114,34 @@ $(function () {
     })
 
     function initKeyShotVR() {
-      var nameOfDiv = "KeyShotVR";
-      var folderName = "chanpinyi";
-      var viewPortWidth = 1712;
-      var viewPortHeight = 1027;
-      var backgroundColor = "#FFFFFF";
-      var uCount = 30;
-      var vCount = 1;
-      var uWrap = true;
-      var vWrap = false;
-      var uMouseSensitivity = -0.0833333;
-      var vMouseSensitivity = 0.0111111;
-      var uStartIndex = 15;
-      var vStartIndex = 0;
-      var minZoom = 1;
-      var maxZoom = 1;
-      var rotationDamping = 0.94;
-      var downScaleToBrowser = true;
-      var addDownScaleGUIButton = false;
-      var downloadOnInteraction = false;
-      var imageExtension = "jpg";
-      var showLoading = false;
-      var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
-      var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
-      var uReverse = false;
-      var vReverse = false;
-      var hotspots = {};
-      
-      keyshotVR = new keyshotVR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots);
+        var nameOfDiv = "KeyShotVR";
+        var folderName = "chanpinyi";
+        var viewPortWidth = 1712;
+        var viewPortHeight = 1027;
+        var backgroundColor = "#FFFFFF";
+        var uCount = 30;
+        var vCount = 1;
+        var uWrap = true;
+        var vWrap = false;
+        var uMouseSensitivity = -0.0833333;
+        var vMouseSensitivity = 0.0111111;
+        var uStartIndex = 15;
+        var vStartIndex = 0;
+        var minZoom = 1;
+        var maxZoom = 1;
+        var rotationDamping = 0.94;
+        var downScaleToBrowser = true;
+        var addDownScaleGUIButton = false;
+        var downloadOnInteraction = false;
+        var imageExtension = "jpg";
+        var showLoading = false;
+        var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
+        var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+        var uReverse = false;
+        var vReverse = false;
+        var hotspots = {};
+
+        keyshotVR = new keyshotVR(nameOfDiv, folderName, viewPortWidth, viewPortHeight, backgroundColor, uCount, vCount, uWrap, vWrap, uMouseSensitivity, vMouseSensitivity, uStartIndex, vStartIndex, minZoom, maxZoom, rotationDamping, downScaleToBrowser, addDownScaleGUIButton, downloadOnInteraction, imageExtension, showLoading, loadingIcon, allowFullscreen, uReverse, vReverse, hotspots);
     }
 
     window.onload = initKeyShotVR;

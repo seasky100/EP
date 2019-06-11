@@ -21,25 +21,20 @@ $(function () {
 		$(".tab_content .mapPic").children().eq($index).fadeIn().siblings().fadeOut();
 	});
 
-	//input去空格
-	//	$(".phone").bind("keyup", function () {
-	//		$(this).val($(this).val().replace(/[\D]/g, ""));
-	//	});
-	//	var inputs=document.getElementsByTagName("input");
-	//  for (var i=0;i<inputs.length; i++) { 
-	//      if(inputs[i].getAttribute("type")=="text")
-	//       inputs[i].onkeyup=function(){
-	//          this.value=this.value.replace(/(^\s+)|\s+$/g,"");
-	//       };
-	//  } 
+	//input去空格 
+	var inputs = document.getElementsByTagName("input");
+	for (var i = 0; i < inputs.length; i++) {
+		if (inputs[i].getAttribute("type") == "text")
+			inputs[i].onkeyup = function () {
+				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
+			};
+	}
 
 	//跳转表单
 	//默认id=1的时候跳转表单
 	if (getUrlParam("id") == 1) {
 		$('html, body').animate({ scrollTop: $('#form').offset().top - 110 }, 1000);
 	};
-
-
 
 	//提交表单数据
 	$('#formSubmit').on('click', function () {
@@ -83,7 +78,7 @@ $(function () {
 						$('.title').val("");
 						$('.content').val("");
 					} else {
-						layer.msg("提交失败", { icon: 7, time: 1000 });
+						layer.msg(res.message, { icon: 7, time: 1000 });
 						$('.name').val("");
 						$('.phone').val("");
 						$('.place').val("");
@@ -96,7 +91,7 @@ $(function () {
 		}
 	})
 
-	
+
 })
 
 
