@@ -25,7 +25,7 @@ $(function(){
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
 	}
-
+	$("#form .title").val("锂电专题");
   //提交表单数据
 	$('#formSubmit').on('click', function () {
 		var name = $('.name').val();

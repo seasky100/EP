@@ -288,12 +288,12 @@ $(function () {
 
 	//提交表单数据
 	$('#formSubmit').on('click', function () {
-		var name = $('.name').val();
-		var phone = $('.phone').val();
-		var place = $('.place').val();
-		var email = $('.email').val();
-		var title = $('.title').val();
-		var content = $('.content').val();
+		var name = $('#form .name').val();
+		var phone = $('#form .phone').val();
+		var place = $('#form .area').val();
+		var email = $('#form .mail').val();
+		var title = $('#form .titleName').val();
+		var content = $('#form .content').val();
 		if (name == "" || name == null) {
 			$('.tips').html("请输入姓名！");
 		} else if (phone == "") {
@@ -321,20 +321,20 @@ $(function () {
 				success: function (res) {
 					if (res.status == 1) {
 						layer.msg("提交成功", { icon: 1, time: 1000 });
-						$('.name').val("");
-						$('.phone').val("");
-						$('.place').val("");
-						$('.email').val("");
-						$('.title').val("");
-						$('.content').val("");
+						$('#form .name').val("");
+						$('#form .phone').val("");
+						$('#form .area').val("");
+						$('#form .mail').val("");
+						$('#form .titleName').val("");
+						$('#form .content').val("");
 					} else {
 						layer.msg(res.message, { icon: 7, time: 1000 });
-						$('.name').val("");
-						$('.phone').val("");
-						$('.place').val("");
-						$('.email').val("");
-						$('.title').val("");
-						$('.content').val("");
+						$('#form .name').val("");
+						$('#form .phone').val("");
+						$('#form .area').val("");
+						$('#form .mail').val("");
+						$('#form .titleName').val("");
+						$('#form .content').val("");
 					}
 				}
 			})

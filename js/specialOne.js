@@ -1,6 +1,4 @@
-// $("#rotateCen-zhong1").load("小金刚一代.html")
-// $("#rotateCen-zhong2").load("小金刚二代.html")
-var keyshotVR;
+ var keyshotVR;
 $(function () {
     //轮播
     var classArr = ["lunboCenBox1", "lunboCenBox2", "lunboCenBox3", "lunboCenBox4"];
@@ -57,7 +55,7 @@ $(function () {
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
 	}
-
+    $("#form .title").val("小金刚专题");
     //提交表单数据
     $('#formSubmit').on('click', function () {
         var name = $('.name').val();

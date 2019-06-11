@@ -121,16 +121,14 @@
 }
 
 .banner{
-	width: 100%;
-	height: 600px;
-	overflow: hidden;
+	max-width: 1920px;
+	min-width: 1200px;
+	margin: 0 auto;
 }
 
 .banner img{
 	width: 100%;
-	height: 600px;
 }
-
 
 /**************************** 锂电搬运车 ******************************************/
 .carry{
