@@ -1,7 +1,7 @@
 
 $(function () {
     //轮播
-    var classArr = ["lunboCenBox1", "lunboCenBox2", "lunboCenBox3", "lunboCenBox4"];
+    var classArr = ["lunboCenBox1", "lunboCenBox2", "lunboCenBox3", "lunboCenBox4", "lunboCenBox5"];
     var index = 0;
 
     //开启定时器
@@ -12,7 +12,7 @@ $(function () {
             $(this).removeClass().addClass(classArr[liIndex])
         });
         index++;
-        if (index > 3) {
+        if (index > 4) {
             index = 0;
         }
         $(".anniu li").removeClass().eq(index).addClass("active");
@@ -34,7 +34,6 @@ $(function () {
             });
             index = liIndex;
             $(".anniu li").removeClass().eq(index).addClass("active");
-
         } else {
             var tempArr = classArr.splice(0, -chaIndex);
             classArr = classArr.concat(tempArr);
@@ -42,7 +41,6 @@ $(function () {
                 $(this).removeClass().addClass(classArr[liIndex])
             });
             index = liIndex;
-
             $(".anniu li").removeClass().eq(index).addClass("active");
         }
     });
