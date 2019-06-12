@@ -262,8 +262,12 @@
 	float:left; 
 	position: relative;
 	transition: all 1s;
-	overflow: hidden; 
+	overflow: hidden;  
 }
+
+.cases a{   
+	color: white;
+} 
 
 .cases .caseSmall img{   
 	width: 100%;
