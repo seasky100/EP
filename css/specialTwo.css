@@ -363,13 +363,10 @@ background: #257433;
 }
 
 .advantage{
+	max-width: 1920px;
+	min-width: 1200px;
 	margin: 0 auto
 }
-
-/* .advantageCent{
-	width: 100%;
-	position: relative;
-} */
 
 .advantageCent img{
 	width: 100%;
@@ -477,10 +474,14 @@ margin-top: 60px;
 	margin-left: 30px;
 }
 .advantage-third{
+	max-width: 1920px;
+	min-width: 1200px;
 	margin: 0 auto;
 }
 
 .advantage-fifth{
+	max-width: 1920px;
+	min-width: 1200px;
 	margin: 0 auto;
 	margin-top: 40px;
 }
