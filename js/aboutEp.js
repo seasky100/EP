@@ -146,7 +146,7 @@ $(function() {
 	$(".valueItem").mouseleave(function() {
 		var $index = $(".valueItem").index(this);
 		if($index>1){
- 			$(this).find("span").stop().animate({height:"63px"});
+			 $(this).find("span").stop().animate({height:"63px"});
 			$(this).find("span").addClass("short");			
 		}
 	});

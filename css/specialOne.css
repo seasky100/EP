@@ -229,7 +229,7 @@
 
 .lunboCenUl li{
     position: absolute; top: 0;
-    transition: all .3s ease;
+    transition: all 1s ease;
     width: 50%;
 }
 
