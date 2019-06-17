@@ -1,5 +1,5 @@
-var common_url ="http://api.ep-zl.com"    //"http://10.10.10.196:9118" ;   //接口
-var img_url ="http://wwwht.ep-zl.com" //"http://10.10.10.196:9119";   //图片和文件   
+var common_url ="http://10.10.10.248:9118"//"http://api.ep-zl.com"    //"http://10.10.10.196:9118" ;   //接口
+var img_url ="http://10.10.10.248:9119" //"http://wwwht.ep-zl.com" //"http://10.10.10.196:9119";   //图片和文件   
 
 //判断是手机重定向
 function browserRedirect() {
@@ -50,7 +50,7 @@ $(function () {
 		success: function (res) {
 			if (res.navList) {
 				var topList = res.navList;
-				var html = '<li><a href="download.html">下载中心<i style="background: url(img/icon1.png) no-repeat center right;"></i><i style="background: url(img/icon11.png) no-repeat center right;display: none;"></i><span class="right">&gt;</span></a></li>';
+				var html = '<li><a href="download.html">样本下载中心<i style="background: url(img/icon1.png) no-repeat center right;"></i><i style="background: url(img/icon11.png) no-repeat center right;display: none;"></i><span class="right">&gt;</span></a></li>';
 				var html2 = "";
 				var productToolHtml = "";
 				for (var i = 0; i < topList.length; i++) {

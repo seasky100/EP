@@ -200,7 +200,7 @@ $(function () {
 					}
 
 					if (productDetail.file) {
-						$("#example .download").html('<a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a>');
+						$("#example .download").html('参数样本： <a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
 						$(".downfile").click(function () {
 							var oid = $(this).attr("oid");
 							if (localStorage.hasOwnProperty('userLogin')) {
@@ -227,9 +227,39 @@ $(function () {
 							}
 						});
 					} else {
-						$("#example .download").html('暂无下载文件');
+						$("#example .download").html('参数样本暂无下载文件');
 					}
 
+					if (productDetail.partsList) {
+						$("#example .download2").html('零件目录： <a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
+						$(".downfile").click(function () {
+							var oid = $(this).attr("oid");
+							if (localStorage.hasOwnProperty('userLogin')) {
+								console.log(oid);
+								$.ajax({
+									url: common_url + '/getUrl',
+									type: "get",
+									async: true,
+									data: {
+										id: oid,
+										type: 3
+									},
+									dataType: 'json',
+									success: function (res) {
+										console.log(res)
+										if (res.url) {
+											window.location.href = img_url + res.url
+										}
+									}
+								});
+							} else {
+								showMask();
+								return false;
+							}
+						});
+					} else {
+						$("#example .download2").html('零件目录暂无下载文件');
+					}
 
 					var tableHtml = "";
 					for (var i = 0; i < productDetail.parameterList.length; i++) {

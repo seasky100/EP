@@ -460,10 +460,6 @@
 }
  
 /************************main内容***************************************/
-.main{
-	
-}
-
 .title{
 	height:30px;
 	text-align: center;
@@ -611,6 +607,20 @@ td{
 }
 
 #example .download a:hover{
+	color: darkslateblue;
+} 
+
+#example .download2{
+	text-align: center;
+}
+
+#example .download2 a{
+	text-decoration: underline;
+	font-size: 18px;
+	color: #D7000F;
+}
+
+#example .download2 a:hover{
 	color: darkslateblue;
 } 
 
