@@ -1,5 +1,5 @@
-var common_url ="http://10.10.10.248:9118"//"http://api.ep-zl.com"    //"http://10.10.10.196:9118" ;   //接口
-var img_url ="http://10.10.10.248:9119" //"http://wwwht.ep-zl.com" //"http://10.10.10.196:9119";   //图片和文件   
+var common_url ="http://api.ep-zl.com"    //"http://10.10.10.196:9118" ;   //接口
+var img_url ="http://wwwht.ep-zl.com" //"http://10.10.10.196:9119";   //图片和文件   
 
 //判断是手机重定向
 function browserRedirect() {
