@@ -141,7 +141,7 @@ function initData() {
 						if(i < insideList.length) {
 							html += '<li><img src="'+img_url+insideList[i].defaultImageAfter + '" /><span>' + insideList[i].name + '</span><ul>';
 							for(var b = 0; b < insideList[i].productList.length; b++) {
-								html += '<li><a href="javascript:;" oid="'+insideList[i].productList[b].id+'" class="downfile">' +insideList[i].productList[b].modelName+ '</a></li>';
+								html += '<li><a href="javascript:;" oid="'+insideList[i].productList[b].id+'" class="downfile">' +insideList[i].productList[b].commonProductName+ '</a></li>';
 							}
 							html += '</ul></li>';
 				 			//console.log(i);i表示有几个li
