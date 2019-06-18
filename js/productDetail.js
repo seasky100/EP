@@ -200,7 +200,7 @@ $(function () {
 					}
 
 					if (productDetail.file) {
-						$("#example .download").html('参数样本： <a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
+						$("#example .download").html('参数样本：<a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
 						$(".downfile").click(function () {
 							var oid = $(this).attr("oid");
 							if (localStorage.hasOwnProperty('userLogin')) {
@@ -231,7 +231,7 @@ $(function () {
 					}
 
 					if (productDetail.partsList) {
-						$("#example .download2").html('零件目录： <a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
+						$("#example .download2").html('零件目录：<a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
 						$(".downfile").click(function () {
 							var oid = $(this).attr("oid");
 							if (localStorage.hasOwnProperty('userLogin')) {
