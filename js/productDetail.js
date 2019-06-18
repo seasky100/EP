@@ -227,7 +227,7 @@ $(function () {
 							}
 						});
 					} else {
-						$("#example .download").html('参数样本暂无下载文件');
+						$("#example .download").html('参数样本：暂无下载文件');
 					}
 
 					if (productDetail.partsList) {
@@ -258,7 +258,7 @@ $(function () {
 							}
 						});
 					} else {
-						$("#example .download2").html('零件目录暂无下载文件');
+						$("#example .download2").html('零件目录：暂无下载文件');
 					}
 
 					var tableHtml = "";
