@@ -44,19 +44,6 @@ $(function () {
 	});
 
 
-	//产品360旋转
-	//	var arrayOfImages = [
-	//    'imgs/1.png',
-	//    'imgs/2.png',
-	//    'imgs/3.png',
-	//    'imgs/4.png',
-	//    'imgs/5.png',
-	//	  'imgs/6.png',
-	//	  'imgs/7.png'
-	//  ]
-	//  $("#target").rollerblade({imageArray:arrayOfImages});
-
-
 	//下载遮罩层  
 	$(".close").click(function () {
 		hideMask();
@@ -204,7 +191,6 @@ $(function () {
 						$(".downfile").click(function () {
 							var oid = $(this).attr("oid");
 							if (localStorage.hasOwnProperty('userLogin')) {
-								console.log(oid);
 								$.ajax({
 									url: common_url + '/getUrl',
 									type: "get",
@@ -215,7 +201,6 @@ $(function () {
 									},
 									dataType: 'json',
 									success: function (res) {
-										console.log(res)
 										if (res.url) {
 											window.location.href = img_url + res.url
 										}
@@ -235,7 +220,6 @@ $(function () {
 						$(".downfile").click(function () {
 							var oid = $(this).attr("oid");
 							if (localStorage.hasOwnProperty('userLogin')) {
-								console.log(oid);
 								$.ajax({
 									url: common_url + '/getUrl',
 									type: "get",
@@ -246,7 +230,6 @@ $(function () {
 									},
 									dataType: 'json',
 									success: function (res) {
-										console.log(res)
 										if (res.url) {
 											window.location.href = img_url + res.url
 										}
