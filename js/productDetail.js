@@ -200,10 +200,10 @@ $(function () {
 										type: 1
 									},
 									dataType: 'json',
-									success: function (res) {
+									success: function (res) { 
 										if (res.url) {
-											window.location.href = img_url + res.url
-										}
+											window.open(img_url + res.url);
+										} 
 									}
 								});
 							} else {
@@ -216,9 +216,9 @@ $(function () {
 					}
 
 					if (productDetail.partsList) {
-						$("#example .download2").html('零件目录：<a href="javascript:;" oid="' + productDetail.id + '" class="downfile"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
-						$(".downfile").click(function () {
-							var oid = $(this).attr("oid");
+						$("#example .download2").html('零件目录：<a href="javascript:;" oid="' + productDetail.id + '" class="downfile2"><i class="iconfont icon--wenjianxiazai"></i>' + productDetail.commonProductName + '</a><img src="img/click.png"/>');
+						$(".downfile2").click(function () {
+							var oid = $(this).attr("oid"); 
 							if (localStorage.hasOwnProperty('userLogin')) {
 								$.ajax({
 									url: common_url + '/getUrl',
@@ -229,10 +229,10 @@ $(function () {
 										type: 3
 									},
 									dataType: 'json',
-									success: function (res) {
+									success: function (res) { 
 										if (res.url) {
-											window.location.href = img_url + res.url
-										}
+											window.open(img_url + res.url);
+										} 
 									}
 								});
 							} else {
