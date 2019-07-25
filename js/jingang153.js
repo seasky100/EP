@@ -29,7 +29,7 @@ $(function(){
 			$('.tips').html("请输入内容！");
 		} else {
 			$.ajax({ 
-				// url: common_url + '/contactUs',
+				url: common_url + '/contactUs',
 				type: "post",
 				async: true,
 				data: {
