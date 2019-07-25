@@ -8,7 +8,7 @@ $(function(){
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
 	}
-	// $("#form .title").val("锂电专题");
+	$("#form .title").val("金刚153专题页");
   //提交表单数据
 	$('#formSubmit').on('click', function () {
 		var name = $('.name').val();
@@ -29,7 +29,7 @@ $(function(){
 			$('.tips').html("请输入内容！");
 		} else {
 			$.ajax({ 
-				// url: common_url + '/contactUs',
+				url: common_url + '/contactUs',
 				type: "post",
 				async: true,
 				data: {
