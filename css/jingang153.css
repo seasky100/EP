@@ -346,10 +346,9 @@
 
 .shiyong-left{
   float: left;
-  margin-top: 45px;
   margin-left: 45px;
   width: 472px;
-  height: 521px;
+  height: 586px;
   position: relative;
   overflow: hidden;
 }
@@ -359,14 +358,13 @@
   width: 587px;
   height: 547px;
   margin-right: 58px;
-  margin-top: 40px;
 }
 
 
 .shiyong-text{
   position: absolute;
-  bottom: 57px;
-  left: 157px;
+  bottom: 87px;
+  left: 174px;
   width: 165px;
   height: 54px;
   border-radius: 35px;
