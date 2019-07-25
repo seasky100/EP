@@ -334,13 +334,39 @@
   background-image: url("../img/huodong/lijishiyong.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  position: relative;
 }
+
+.lijishiyong-cen{
+  width: 1200px;
+  margin-left: 30%;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+.shiyong-left{
+  float: left;
+  margin-top: 45px;
+  margin-left: 45px;
+  width: 472px;
+  height: 521px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shiyong-right{
+  float: right;
+  width: 587px;
+  height: 547px;
+  margin-right: 58px;
+  margin-top: 40px;
+}
+
 
 .shiyong-text{
   position: absolute;
-  bottom: 97px;
-  left: 420px;
+  bottom: 57px;
+  left: 157px;
   width: 165px;
   height: 54px;
   border-radius: 35px;
