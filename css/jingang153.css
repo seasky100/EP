@@ -161,26 +161,12 @@
   margin: 0 auto;
   max-width: 1920px;
   min-width: 1200px;
-  background: #f3f3f3;
-  padding-top: 45px;
-  box-sizing: border-box;
+  background-color: #efefef; 
+  box-sizing: border-box; 
 }
 
-.banyun-cen{
-  width: 1200px;
-  margin: 0 auto;
-  background: #f3f3f3;
-  overflow: hidden;
-}
-
-.banyun-cen img:first-child{
-  float: left;
-  margin-left: 50px;
-}
-.banyun-cen img:last-child{
-  float: right;
-  margin-top: 165px;
-  margin-right: 50px;
+.banyun img{
+  margin: 0 auto; 
 }
 
 /**************************  mengban  **********************/
