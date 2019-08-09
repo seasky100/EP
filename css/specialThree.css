@@ -1,4 +1,9 @@
 /******************************顶部栏*******************************/
+.wrap{
+	margin:0 auto;
+	width:1280px;
+}
+
 .wrapper{
 	margin:0 auto;
 	width:1200px;
@@ -17,7 +22,8 @@
 	display: none;
 }
 
-#header .wrapper{ 
+#header .wrapper{
+	font-family:"微软雅黑";
 	font-size: 12px;
 	color: #727272;
 }
@@ -65,11 +71,11 @@
 .tool4{
 	border-top:0;
 	position: absolute;
-    background: white;
-    border: 1px solid #9a9a9a;
-    left: -1px;
-    top: 152px;
-  	cursor: pointer;
+  background: white;
+  border: 1px solid #9a9a9a;
+  left: -1px;
+  top: 152px;
+  cursor: pointer;
 }
 
 #tool div i {
@@ -89,6 +95,9 @@
 	display: block;
 }
 
+#back-to-top{
+	display: none;
+}
 
 .tool1 .redTip{
 	position: absolute;	
@@ -111,10 +120,6 @@
 	display: none;
 }
 
-
-
-
-/*************************banner*****************************************/
 .banner{
 	max-width: 1920px;
 	min-width: 1200px;
@@ -125,257 +130,74 @@
 	width: 100%;
 }
 
-
-
-/******************  list  *******************************/
-.list{
-  margin: 0 auto;
-  max-width: 1920px;
-  min-width: 1200px;
-  overflow: hidden;
+/**************************** 冷库专题页 *******************************/
+.panel {
+	position: relative; 
+	height: 100%; 
+	margin: 0 auto;  
+	background-repeat: no-repeat; 
+	/* overflow-x: hidden; */
+}
+ 
+.inner{  
+	width: 1200px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	margin-left: -600px; 
 }
 
-.list-cen{
-  width: 1200px;
-  height: 330px;
-  margin:  0 auto;
-  padding: 60px 0;
-  box-sizing: border-box;
-  /* background: rebeccapurple; */
+.inner img{
+	margin: 0 auto;
+}
+	
+.cold1 .img2{
+	margin-top: 50px; 
+	margin-bottom: 130px;
 }
 
-.list-cen-box{
-  float: left;
-  margin: 0 45px;
-  text-align: center;
+.cold2 p{
+	margin-top: 58px;
+	margin-bottom: 100px;
+	color: white;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
 }
 
-.list-cen-box >p {
-  margin-top: 22px;
-  font-size: 24px;
-  color: #000000;
+.cold2 span{
+	font-weight: bold;
 }
 
-/************************  banyun  ***************************/
-.banyun{
-  margin: 0 auto;
-  max-width: 1920px;
-  min-width: 1200px;
-  background-color: #efefef;
-  background: -moz-linear-gradient(right, #f5f5f5 0%, #efefef 100%); /* 支持 Firefox (3.6 to 15) */
-  background: -webkit-linear-gradient(right, #f5f5f5 0%, #efefef 100%); /* 支持 Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background: -o-linear-gradient(right, #f5f5f5 0%, #efefef 100%); /* 支持旧 Opera (11.1 to 12.0) */ 
-	background: linear-gradient(to right, #f5f5f5 0%, #efefef 100%);/* 标准语法; 需要最新版本 */
-  box-sizing: border-box; 
+.cold3 .img1{
+	margin-bottom: 90px;
 }
 
-.banyun img{
-  margin: 0 auto; 
+.cold4 .img1{
+	margin-bottom: 66px;
 }
 
-/**************************  mengban  **********************/
-.mengban{
-  margin: 0 auto;
-  max-width: 1920px;
-  min-width: 1200px;
-  height: 1300px;
-  background-image: url("../img/huodong/mengban.jpg");
-  background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
+.cold5 .img1{
+	margin-bottom: 90px;
 }
 
-.mengban-cen{
-  width: 1200px;
-  margin: 0 auto;
-  height: 100%;
-  padding-top: 90px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.mengban-cen-box{
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; */
-  width: 700px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.box-head{
-  position: relative;
-}
-
-.box-head >h3{
-  margin-bottom: 10px;
-  font-size: 42px;
-  color: #FFFFFF;
-  font-weight: bold;
-  text-align: center;
-}
-
-.box-head > p:nth-child(2){
-  width: 40px;
-  height: 3px;
-  background: red;
-  position: absolute;
-  left: 47%;
-  font-size: 22px;
-}
-
-.box-head > p:nth-child(3){
-  margin-top: 22px;
-  margin-bottom: 28px;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 22px;
-}
-
-.box-bottn >video{
-  width: 100%;
-}
-
-.show{
-  margin: 0 auto;
-  max-width: 1920px;
-  min-width: 1200px;
-  height: 900px;
-  background:#f2f1f2;
-  padding: 60px 0;
-  box-sizing: border-box;
-}
-
-.show-cen{
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.show-cen >img{
-  display: block;
-  float: left;
-  box-shadow: 0 0 5px #acaaaa;
-}
-
-.show-cen >img:nth-child(2){
-  margin: 0 8px;
-}
-
-
-/************  zhanshi  ********************/
-.zhanshi{
-  max-width: 1920px;
-  min-width: 1200px;
-  margin: 0 auto;
-}
-
-.zhanshi-cen{
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.zhanshi-cen > img{
-  display: block;
-  width: 770px;
-  margin: 0 auto;
+.cold6 .img1{
+	margin-bottom: 160px;
 }
 
 
 
 
 
-/**************************  fenge  *************************/
-.fenge{
-  margin-top: 40px;
-  max-width: 1920px;
-  min-width: 1200px;
-  margin: 0 auto;
+
+.cold9 .img1{
+	margin-bottom: 45px;
 }
 
-.fenge > img{
-  width: 100%;
-  height: 100%;
+.cold10 .img1{
+	margin-bottom: 20px;
 }
-
-
-
-
-
-/***********************  canshu  *************************/
-.canshu{
-  max-width: 1920px;
-  min-width: 1200px;
-  margin: 0 auto;
-}
-
-.canshu-cen{
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.canshu-cen > a{
-  display: block;
-  margin: 0 auto;
-  width: 204px;
-}
-
-/********************************  jilishiyong  **************************/
-.jilishiyong{
-  max-width: 1920px;
-  min-width: 1200px;
-  height: 600px;
-  margin: 0 auto;
-  margin-top: 50px;
-  background-image: url("../img/huodong/lijishiyong.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.lijishiyong-cen{
-  width: 1200px;
-  margin-left: 30%;
-  margin: 0 auto;
-  overflow: hidden;
-
-}
-
-.shiyong-left{
-  float: left;
-  margin-left: 45px;
-  width: 472px;
-  height: 586px;
-  position: relative;
-  overflow: hidden;
-}
-
-.shiyong-right{
-  float: right;
-  width: 587px;
-  height: 547px;
-  margin-right: 58px;
-}
-
-
-.shiyong-text{
-  position: absolute;
-  bottom: 87px;
-  left: 174px;
-  width: 165px;
-  height: 54px;
-  border-radius: 35px;
-  box-shadow: 0 0 10px #8a2627;
-  background: #ffead1;
-  color: red;
-  text-align: center;
-  line-height: 54px;
-}
-
-
-
 
 /*************************表单*****************************************/
 .c1:after{
@@ -390,6 +212,7 @@
 }
 
 #form .wrapper form{
+	border-top: 1px solid #cccccc;
 	padding-top: 85px;
 	padding-left:40px;
 }
@@ -484,13 +307,9 @@ textarea{
 	top: 19px;
 }
 
-
-
 /************************footer栏***************************************/
 #footer{
-  max-width: 1920px;
-  min-width: 1200px;
-  margin: 0 auto;
+	width: 100%;
 	height: 380px;
 	background: #333333;
 }
