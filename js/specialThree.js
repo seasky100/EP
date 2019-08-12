@@ -1,4 +1,16 @@
-$(function(){ 
+$(function () {
+	$.scrollify({
+		section: ".panel",
+		sectionName: false,
+		interstitialSection: ".headerTop,#form,#footer"
+	});
+
+	$('.animate').scrolla({
+		mobile: false,
+		once: false
+	});
+
+
 
 	//input去空格 
 	var inputs = document.getElementsByTagName("input");
@@ -9,7 +21,7 @@ $(function(){
 			};
 	}
 	$("#form .title").val("冷库专题");
-  //提交表单数据
+	//提交表单数据
 	$('#formSubmit').on('click', function () {
 		var name = $('.name').val();
 		var phone = $('.phone').val();
@@ -28,7 +40,7 @@ $(function(){
 		} else if (content == "") {
 			$('.tips').html("请输入内容！");
 		} else {
-			$.ajax({ 
+			$.ajax({
 				url: common_url + '/contactUs',
 				type: "post",
 				async: true,
@@ -51,7 +63,7 @@ $(function(){
 						$('.title').val("");
 						$('.content').val("");
 					} else {
-						layer.msg(res.message , { icon: 7, time: 1000 });
+						layer.msg(res.message, { icon: 7, time: 1000 });
 						$('.name').val("");
 						$('.phone').val("");
 						$('.place').val("");
