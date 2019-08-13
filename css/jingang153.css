@@ -183,6 +183,7 @@
   margin-right: 50px;
 }
 
+
 /**************************  mengban  **********************/
 .mengban{
   margin: 0 auto;
@@ -203,12 +204,6 @@
 }
 
 .mengban-cen-box{
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; */
   width: 700px;
   margin: 0 auto;
   overflow: hidden;
