@@ -141,9 +141,16 @@
 
 /**************************** 适配笔记本 *******************************/
 @media screen and (max-height: 900px) {
-	 
+
 	.inner .title{
 		height: 58px;
+	}
+	.cold1 .img1{
+		height: 70px;
+	}
+	.cold1 .img2{
+		height: 36px;
+		margin-bottom: 110px !important;
 	}
 	.cold2 .inner p{ 
 		font-size: 14px;
