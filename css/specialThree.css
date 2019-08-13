@@ -139,13 +139,97 @@
 	/* overflow-x: hidden; */
 }
 
+/**************************** 适配笔记本 *******************************/
 @media screen and (max-height: 900px) {
-	body {
-			background-color:lightblue;
-	}
+	 
 	.inner .title{
-		width: 200px;
+		height: 58px;
 	}
+	.cold2 .inner p{ 
+		font-size: 14px;
+		line-height: 20px; 
+	}
+	.cold2 .img2{
+		height: 380px;
+	}
+	.cold3 .img1{
+		margin-bottom: 50px !important;
+	}
+	.cold3 .img2{
+		height: 340px;
+	}
+	.cold4 .img1{
+		margin-bottom: 50px !important;
+	}
+	.cold4 .img2{
+		height: 440px;
+	}
+	.cold5 .img2{
+		height: 420px;
+	}
+	.cold6 .img1{
+		height: 85px; 
+		margin-bottom: 120px !important;
+	}
+	.cold6 .img2{
+		height: 270px;
+	}
+
+	.cold7 .inner {
+    width: 850px; 
+    margin-left: -425px;
+	}
+	.cold7 .coldProduct{
+		width: 418px !important;
+		height: 247px !important; 
+	}
+	.cold7 a:nth-of-type(1) .coldProduct,.cold7 a:nth-of-type(3) .coldProduct{
+		margin-right: 14px !important;
+	} 
+	.cold7 a:nth-of-type(1) .coldProduct,.cold7 a:nth-of-type(2) .coldProduct{
+		margin-bottom: 14px !important;
+	} 
+	.coldProduct img{
+		height: 240px;
+		left: 190px !important;
+		bottom: 12px !important;
+	} 
+	.cold7 a:nth-of-type(4) .coldProduct img{
+		left:136px !important;
+	}
+
+	.cold8 .inner {
+		width: 900px;
+		margin-left: -450px;
+	}
+	.productInner{
+		width: 200px !important; 
+		margin-right: 16px !important;
+	}
+	.productInner img{
+		width: 100%;  
+	}
+
+	.productInner p {
+		font-size: 12px !important; 
+		line-height: 24px !important; 
+	} 
+
+	.cold9 .img1{
+		margin-bottom: 30px !important;
+	}
+	.cold9 .img2{
+		height: 490px;
+	}
+	.cold10 .img1{
+		margin-bottom: 20px;
+	}
+	.cold10 .img2{
+		height: 472px;
+	}
+
+
+
 }
 
 .inner{  
