@@ -206,13 +206,18 @@
 	}
 
 	.cold8 .inner {
-		width: 900px;
-		margin-left: -450px;
+		width: 864px;
+		margin-left: -432px;
 	}
+
+	.cold8 .img1 {
+		margin-bottom: 10px !important;
+	}
+
 	.productInner{
 		width: 200px !important; 
-		margin-right: 16px !important;
 	}
+
 	.productInner img{
 		width: 100%;  
 	}
@@ -299,6 +304,11 @@
 	position: absolute;
 	left: 264px;
 	bottom: 20px;
+	transition: all 0.6s;
+}
+
+.coldProduct:hover img{
+	transform: scale(1.1)
 }
 
 .cold7 a:nth-of-type(4) .coldProduct img{
@@ -320,7 +330,19 @@
 .productInner{
 	width: 280px;
 	float: left;
-	margin-right: 20px;
+	margin-right: 20px; 
+}
+
+.productInnerImg{ 
+	overflow: hidden;
+}
+
+.productInner img{ 
+transition: all 0.4s;
+}
+
+.productInner:hover img{ 
+	transform: scale(1.1);
 }
 
 .cold8 .productInner:hover p{

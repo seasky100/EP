@@ -353,7 +353,7 @@
 .introduction_top span{
 	width: 552px;
     font-size: 16px; 
-    display: inline-block;
+    display: block;
     float: right;
     line-height: 34px;
     text-indent: 2em; 
@@ -371,7 +371,7 @@
 }
 
 .introduction_bot ul{
-	background: url(../img/introduction-ul.png) no-repeat center center;
+	background: url(../img/introduction-ul.jpg) no-repeat center center;
 }
 
 .introduction_bot ul li{

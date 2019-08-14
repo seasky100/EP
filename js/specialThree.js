@@ -20,7 +20,7 @@ $(function () {
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
 	}
-	$("#form .title").val("冷库专题");
+	$("#form .title").val("冷库车型");
 	//提交表单数据
 	$('#formSubmit').on('click', function () {
 		var name = $('.name').val();
