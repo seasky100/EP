@@ -222,6 +222,10 @@ img{
 	position: relative;
 }
 
+.menuDiv > ul > li .zhaopinUl li a{
+	width: 151px; 
+}
+
 .productUl li a>i{
 	display: block;
 	width: 37px;
