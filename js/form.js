@@ -7,8 +7,8 @@ $(function(){
 			inputs[i].oninput = function () {
 				this.value = this.value.replace(/(^\s+)|\s+$/g, "");
 			};
-	}
-	$("#form .title").val("金刚153专题页");
+	} 
+	
   //提交表单数据
 	$('#formSubmit').on('click', function () {
 		var name = $('.name').val();
