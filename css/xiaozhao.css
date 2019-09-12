@@ -172,7 +172,9 @@
 
 
 /*************************主要内容*****************************************/
-#main{ 
+#main{
+	max-width:1920px;
+	margin: 0 auto;
 	background: url(../img/xiaozhao/bg.jpg) no-repeat; 
 	padding-bottom: 65px;
 }
