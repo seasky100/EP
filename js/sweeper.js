@@ -26,7 +26,7 @@ $(function () {
 			$('.tips').html("请输入主题！");
 		} else if (content == "") {
 			$('.tips').html("请输入内容！");
-		} else {
+		} else { 
 			$.ajax({
 				url: common_url + '/contactUs',
 				type: "post",
