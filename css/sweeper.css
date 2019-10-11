@@ -144,6 +144,9 @@
 	display: inline-block;
 	
 }
+#content .proright img{
+	width: 600px;
+}
 #content .sweeper .sweeperb{
 	width: 100%;
 	height: 136px;
