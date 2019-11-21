@@ -1,49 +1,49 @@
 $(function(){
 	var delCommon = false;
 	var idss=[];	
-    var compareList =""; 
-    var comparehtml = '<option value="">请选择车型</option>';
-    //下拉列表
+	var compareList =""; 
+	var comparehtml = '<option value="">请选择车型</option>';
+	//下拉列表
 	$.ajax({
 		url: common_url+'/getGroupProductList',
 		type: "get",
 		async: true,
 		dataType:'json',
 		success:function(res){
-	        if(res.groupList){        	
-	        	compareList=res.groupList;  				
+	    if(res.groupList){        	
+	      compareList=res.groupList;  				
 				for(var i = 0; i < compareList.length; i++) {               	
-                	comparehtml += '<option value="'+compareList[i].id+'">'+compareList[i].name+'</option>';	
+          comparehtml += '<option value="'+compareList[i].id+'">'+compareList[i].name+'</option>';	
 				}		
 				$(".select1").html(comparehtml); 
-	        }
+	    }
 		}
 	})
     
-    $('.select1').change(function(){
+	$('.select1').change(function(){
 		var currentVal=$(this).val();
 		var html2 = '<option value="">请选择型号</option>';
-	 	if(currentVal){
-	 		$(this).parent().find('.select2').show();		
-	 		for(var i = 0; i < compareList.length; i++) {
-	 			if(currentVal==compareList[i].id){
-	 				for(var j = 0; j < compareList[i].productList.length; j++) {               	
-	                	html2 += '<option value="'+compareList[i].productList[j].id+'">'+compareList[i].productList[j].name+'['+compareList[i].productList[j].modelName+']</option>';		                	
+		if(currentVal){
+			$(this).parent().find('.select2').show();		
+			for(var i = 0; i < compareList.length; i++) {
+				if(currentVal==compareList[i].id){
+					for(var j = 0; j < compareList[i].productList.length; j++) {               	
+						html2 += '<option value="'+compareList[i].productList[j].id+'">'+compareList[i].productList[j].name+'['+compareList[i].productList[j].modelName+']</option>';		                	
 					}
-	 			}	 			 
+				}	 			 
 			}
-	 		$(".select2").html(html2);
-	 	}
+			$(".select2").html(html2);
+		}
 	})
-    $('.select2').change(function(){
+  $('.select2').change(function(){
 		var currentVal=$(this).val();
 		idss.push(currentVal);
 		showTableData(idss,delCommon);
 	})
     
  
-    //获取id值
-    var productId = getUrlParam('id');
+  //获取id值
+  var productId = getUrlParam('id');
 	if(productId){
 		//console.log(productId);
 		var getArr=productId.split(",");
@@ -64,24 +64,23 @@ $(function(){
  	
 	
 	//删除对比产品
-   	$(".close").on("click",function(){
-  		var index=Number($(this).attr("data-index"));  	
-   		var removeId=$(this).attr("data-id");
-   		if(removeId){
- 			$(this).removeAttr("data-id");
-			$(".tableHead td").eq(3).text(" ");
-			$(".tableHead td").eq(4).text(" ");
-			$(".tableHead td").eq(5).text(" ");
-			$(".topbox").find("img").attr('src',"img/noImg.png");
-			$(".topbox").find(".select1").show();
-			$(".topbox").eq(index).find(".select1").html(comparehtml);
-					
-			idss.remove(removeId);
-			showTableData(idss,delCommon);			
-   		}	
-   	})	 		
+	$(".close").on("click",function(){
+		var index=Number($(this).attr("data-index"));  	
+		var removeId=$(this).attr("data-id");
+		if(removeId){
+		$(this).removeAttr("data-id");
+		$(".tableHead td").eq(3).text(" ");
+		$(".tableHead td").eq(4).text(" ");
+		$(".tableHead td").eq(5).text(" ");
+		$(".topbox").find("img").attr('src',"img/noImg.png");
+		$(".topbox").find(".select1").show();
+		$(".topbox").eq(index).find(".select1").html(comparehtml);
+				
+		idss.remove(removeId);
+		showTableData(idss,delCommon);			
+		}	
+	})	 		
 })
-
 
 
 function showTableData(idss,delCommon){	
@@ -98,9 +97,9 @@ function showTableData(idss,delCommon){
 			},
 			dataType:'json',
 			success:function(res){
-		        if(res){
-		        	//console.log(res.list);
-		        	var productDetail=res.list[0];
+				if(res){
+					//console.log(res.list);
+					var productDetail=res.list[0];
 					var tableHtml="";				
 					for(var i = 0; i < productDetail.parameterList.length; i++) {
 						tableHtml += '<div class="tdTitle"><span class="suo"></span>'+productDetail.parameterList[i].name+'</div><table class="'+productDetail.parameterList[i].id+'">';	
@@ -140,7 +139,7 @@ function showTableData(idss,delCommon){
 							}
 						} 
 					} 
-		        }
+		    }
 			}
 		})		
 	}else{
