@@ -113,10 +113,20 @@
 
 /***********************  banner  ************************************/
 .banner{
-  max-width: 1920px;
+  /* max-width: 1920px; */
 	min-width: 1200px;
-	margin: 0 auto;
+	height: 500px;
+	width: 100%;
+	background: url("../img/jingangEFL/productImg.jpg") no-repeat center center;
 }
+
+/* .bannerCen{
+width: 1200px;
+margin: 0 auto;
+height: 500px;
+background-color: bisque;
+
+} */
 
 .banner > img{
 	width: 100%;
@@ -182,12 +192,22 @@
 	line-height: 68px;
 }
 
-.btnCen > img{
+.two{
 	position: absolute;
-	bottom: 230px;
+	bottom: 250px;
 	right: 20px;
 	width: 680px;
 	height: 480px;
+}
+
+
+@media screen and (max-width: 1500px) {
+	.two{
+			width: 630px;
+			height: 430px;
+			right: 70px;
+
+	}
 }
 
 /*************************表单*****************************************/
