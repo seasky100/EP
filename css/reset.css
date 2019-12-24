@@ -62,7 +62,9 @@ img{
 .clearfix:after{content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
 .clearfix{zoom:1;}
 
-
+.foot_bottom a{
+	color: #FFFFFF;
+}
 /************************导航栏开始***************************************/
 #nav{
 	padding-top: 20px;
@@ -110,16 +112,16 @@ img{
 /* 一级菜单 */
 .menuDiv > ul > li > a {
 	padding:18px 19px;
-    color: black;
-    text-align: center;
-    display: block;
-    font-size: 18px;
+  color: black;
+  text-align: center;
+  display: block;
+  font-size: 18px;
 }
 
 /* 二级菜单*/
 .menuDiv > ul > li > ul {
-    display: none;
-    border: 1px solid #ccc;
+  display: none;
+  border: 1px solid #ccc;
 	background: #FFFFFF;
 	position: absolute;
 	left: 0;
@@ -133,50 +135,49 @@ img{
 
 /* 设置二级菜单的li的样式 */
 .menuDiv > ul > li > ul > li {
-    float: none;
-    padding:0 23px;
+  float: none;
+  padding:0 23px;
 	opacity: 0.9;
 }
 
 .menuDiv > ul > li > ul > li > a {
-    width: 205px;
-    height: 40px;
-    line-height: 40px;
-    color: #000000;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-    border-top: none;
-    display: block;
-    font-size: 14px;
+  width: 205px;
+  height: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  display: block;
+  font-size: 14px;
 }
   
 /* 鼠标放在一级菜单上，显示二级菜单 */
 .menuDiv > ul > li:hover ul {
-    display: block;
+  display: block;
 }
 
 .menuDiv > ul > li:hover .redline {
-    display: block;
+  display: block;
 }
 
 /* 在一级菜单中，鼠标放上去的样式 */
 .menuDiv > ul > li > a:hover {
-    color: #d7000f;
-    font-weight:bold;
+  color: #d7000f;
+  font-weight:bold;
 }
 
 /* 在二级菜单中，鼠标放上去的样式 */
 .menuDiv > ul > li > ul > li:hover {
-    background-color: #D7000F;
+  background-color: #D7000F;
 }
 
 .menuDiv > ul > li > ul > li:hover a{
 	border-bottom: 1px solid #D7000F;
-    /*border-bottom: 0;*/
 }
  
 .menuDiv > ul > li > ul > li a:hover {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .menuDiv > ul > li .serviceUl li a{
@@ -245,9 +246,9 @@ img{
 
 .logoNew{
 	width: 95px;
-    height: 40px;
-    margin-top: 15px;
-    float: left;
+  height: 40px;
+  margin-top: 15px;
+  float: left;
 }
 
 .new{
@@ -337,7 +338,7 @@ img{
 	margin: 0;
 	position: absolute;
 	top: 230px;
-    left: 42px;
+  left: 42px;
 }
 
 .productToolBox{
@@ -348,7 +349,7 @@ img{
 	position: fixed;
 	background-color: #FFFFFF;
 	left: -380px;
-    top: 0;
+  top: 0;
 	overflow: auto;
 	display: none;
 	padding-bottom: 20px;
