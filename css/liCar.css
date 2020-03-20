@@ -641,11 +641,29 @@
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .cpdCen >img{
   display: block;
   margin-top: 118px;
+}
+
+.cpdCen > a{
+  position: absolute;
+  right: 3px;
+  bottom: 45px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  width: 130px;
+  height: 37px;
+  color: #fff;
+  background-image: linear-gradient(to right, #e58700 , #ffc500);
+  line-height: 37px;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 18px 0 0 18px;
 }
 
 
@@ -765,7 +783,7 @@
 
 .scenetwoCen > img{
   position: absolute;
-  bottom: 369px;
+  bottom: 400px;
   left: 60px;
 
 }
@@ -826,7 +844,7 @@
 }
 
 .scenetwoBtnTwo{
-  margin: 4px 0;
+  margin: 15px 0;
 }
 
 .scenetwoBtnTwo span:first-child,.scenetwoBtnThree span:first-child{
@@ -841,7 +859,7 @@
 }
 
 .scenetwoBtnThree{
-  margin-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 .scenetwoBtnThree span:first-child{
