@@ -325,7 +325,7 @@
 }
 #tabs {
   border: 1px solid #ddeeee;
-  border-top: 6px solid #ff6600;
+  border-top: 6px solid #58b841;
 }
 
 .lunboCen > .swiper-container{
@@ -923,7 +923,7 @@
   text-align: center;
 }
 
-.moreCarCen > img{
+.moreCarCen > a >img{
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -1211,7 +1211,7 @@
 
 #tabs {
   border: 1px solid #ddeeee;
-  border-top: 6px solid #ff6600;
+  border-top: 6px solid #58b841;
 }
 
 .lunboCen > .swiper-container{
