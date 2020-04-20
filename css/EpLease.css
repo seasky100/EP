@@ -127,7 +127,7 @@
 	max-width: 1920px;
 	margin:0 auto; 
 	height: 785px;
-	background: url(../img/EpleaseBanner.png) no-repeat;
+	background: url(../img/EpleaseBanner.jpg) no-repeat;
 	position: relative;
 	overflow: hidden;
 }
@@ -259,7 +259,7 @@
 #contentBottom{
 	max-width: 1920px;
 	margin:0 auto; 
-	background: url(../img/Eplease-contentBackground.png);
+	background: url(../img/Eplease-contentBackground.jpg);
 	padding: 97px 0 62px;
 }
 
