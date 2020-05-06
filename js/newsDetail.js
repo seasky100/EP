@@ -27,7 +27,7 @@ $(function(){
 		$('.top .nTitle').text(detail.title);
 		// 时间
 		$('.top .nTime').text(detail.time.split('T')[0]);
-		// 内容
+		// 内容(富文本解析)
 		$('.detail').html(unescape(detail.content));
 		// 上下篇
 		if(detail.pre) {
