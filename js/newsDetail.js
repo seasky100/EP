@@ -6,14 +6,12 @@ $(function(){
 			$("#nav").addClass("fixnav");
 			$("#banner").addClass("new");
 			$("#nav .logo").addClass("logoNew");
-			
 		}else{
 			$("#nav").removeClass("fixnav");
 			$("#banner").removeClass("new");
 			$("#nav .logo").removeClass("logoNew");
 		}
 	})
-	
 
 	// 获取id
 	var id = window.location.search.split("=")[1];
